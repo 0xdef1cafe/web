@@ -61,6 +61,7 @@ export const mockStore: ReduxState = {
       BitcoinCash: false,
       Axelar: false,
       Zendesk: false,
+      RainbowCharts: false,
     },
     selectedLocale: 'en',
     balanceThreshold: '0',

@@ -20,6 +20,7 @@ export type FeatureFlags = {
   BitcoinCash: boolean
   Axelar: boolean
   Zendesk: boolean
+  RainbowCharts: boolean
 }
 
 export type Flag = keyof FeatureFlags
@@ -51,6 +52,7 @@ const initialState: Preferences = {
     BitcoinCash: getConfig().REACT_APP_FEATURE_BITCOINCASH,
     Axelar: getConfig().REACT_APP_FEATURE_AXELAR,
     Zendesk: getConfig().REACT_APP_FEATURE_ZENDESK,
+    RainbowCharts: getConfig().REACT_APP_FEATURE_RAINBOW_CHARTS,
   },
   selectedLocale: simpleLocale(),
   balanceThreshold: '0',
